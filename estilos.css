@@ -1,7 +1,106 @@
-h1{
+/* h1{
     border:10px dotted gold;
     background-color: beige;
     border-radius: 50px;
     text-align: center;
     box-shadow: 5px 5px gray;
+} */
+
+/* Selector universal */
+/* *{
+    color: brown;
+} */
+
+/* Selección por id=# */
+/* #link1{
+    font-size: 20px;
+    color: gold;
+}
+#link6{
+    background-color: black;
+    color: whitesmoke;
+}
+ */
+/* Selección por clase = . */
+/* .rojo{
+    background-color: red;
+    border: 5px groove tomato;
+    border-radius: 5px;
+}
+
+.verde{
+    background-color: greenyellow;
+    border: 5px groove green;
+    border-radius: 5px;
+}
+
+h1.verde{
+    font-size: 50px;
+} */
+
+/* Buscar atributo sin importar el valor */
+/* [href]{
+    border-bottom: 5px solid navy;
+}
+
+[lang]{
+    color: aqua;
+} */
+
+/* Buscar atributo con un valor específico */
+[href="#"]{
+    color: green;
+}
+
+[href*="you"]{
+    color: rebeccapurple;
+}
+
+[href$="mx"]{
+    background-color: green;
+}
+
+[href^="https"]{
+    font-size: 25px;
+}
+
+/* Selector de listas (los elementos a seleccionar se separan por comas) */
+/* Selector parientes directos */
+#mp1{
+    border-top: 3px solid tomato;
+    border-bottom: 3px solid tomato;
+}
+
+#mp1 main{
+    background-color: violet;
+}
+
+#mp1 aside{
+    background-color: teal;
+}
+
+/* Selector hijos */
+#mp1 > footer{
+    background-color: fuchsia;
+}
+
+/* Poner color al pie de los artículos */
+
+#mp1 article >footer{
+    border: 5px double orange;
+}
+
+/* Selector hermano general "~" */
+
+#mp1 h2 ~ article{
+    box-shadow: 10px 10px 10px palegreen;
+}
+
+/* Hermano adyacente */
+h2 + article{
+    border-top: 5px double blue;
+}
+
+#mp1 h2 + article, #mp1 nav, [href="#"]{
+    border-top: 5px double cadetblue;
 }
